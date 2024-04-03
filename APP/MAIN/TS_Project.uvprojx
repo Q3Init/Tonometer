@@ -14,16 +14,16 @@
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
-          <Device>APM32E103VE</Device>
-          <Vendor>Geehy</Vendor>
-          <PackID>Geehy.APM32E1xx_DFP.1.0.2</PackID>
-          <PackURL>https://www.geehy.com/uploads/tool/</PackURL>
-          <Cpu>IRAM(0x20000000,0x00020000) IROM(0x08000000,0x00080000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
+          <Device>PY32F030x8</Device>
+          <Vendor>Puya</Vendor>
+          <PackID>Puya.PY32F0xx_DFP.1.1.0</PackID>
+          <PackURL>https://www.puyasemi.com/</PackURL>
+          <Cpu>IRAM(0x20000000,0x00002000) IROM(0x08000000,0x00010000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0APM32E10x_512 -FS08000000 -FL080000 -FP0($$Device:APM32E103VE$Flash\APM32E10x_512.FLM))</FlashDriverDll>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0PY32F0xx_64 -FS08000000 -FL010000 -FP0($$Device:PY32F030x8$Flash\PY32F0xx_64.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:APM32E103VE$Device\Include\apm32e10x.h</RegisterFile>
+          <RegisterFile>$$Device:PY32F030x8$Device\Include\py32f0xx.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -33,7 +33,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:APM32E103VE$SVD\APM32E103xx.svd</SFDFile>
+          <SFDFile>$$Device:PY32F030x8$SVD\py32f030xx.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -110,13 +110,13 @@
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
-          <SimDllArguments> -REMAP</SimDllArguments>
-          <SimDlgDll>DCM.DLL</SimDlgDll>
-          <SimDlgDllArguments>-pCM3</SimDlgDllArguments>
+          <SimDllArguments> -REMAP </SimDllArguments>
+          <SimDlgDll>DARMCM1.DLL</SimDlgDll>
+          <SimDlgDllArguments>-pCM0+</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
-          <TargetDllArguments></TargetDllArguments>
-          <TargetDlgDll>TCM.DLL</TargetDlgDll>
-          <TargetDlgDllArguments>-pCM3</TargetDlgDllArguments>
+          <TargetDllArguments> </TargetDllArguments>
+          <TargetDlgDll>TARMCM1.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pCM0+</TargetDlgDllArguments>
         </DllOption>
         <DebugOption>
           <OPTHX>
@@ -138,7 +138,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3>"" ()</Flash3>
+          <Flash3></Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -174,7 +174,7 @@
             <AdsLsxf>1</AdsLsxf>
             <RvctClst>0</RvctClst>
             <GenPPlst>0</GenPPlst>
-            <AdsCpuType>"Cortex-M3"</AdsCpuType>
+            <AdsCpuType>"Cortex-M0+"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
             <mOS>0</mOS>
             <uocRom>0</uocRom>
@@ -246,12 +246,12 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x20000</Size>
+                <Size>0x2000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x80000</Size>
+                <Size>0x10000</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -276,7 +276,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x80000</Size>
+                <Size>0x10000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -301,7 +301,7 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x20000</Size>
+                <Size>0x2000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
@@ -337,9 +337,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>APM32E103_MINI,DEBUG_INFO_ENABLE,ARM_MATH_CM3,__CC_ARM,ARM_MATH_MATRIX_CHECK,ARM_MATH_ROUNDING</Define>
+              <Define>USE_HAL_DRIVER,PY32F030x8</Define>
               <Undefine></Undefine>
-              <IncludePath>..\main;..\applications;..\..\OS\OS_Driver;..\..\OS\OS_Task;..\..\RTE;..\..\TYPES;..\..\RTE;..\..\LIB;..\..\BSW;..\..\Cfg\BSW_Cfg;..\..\MCAL;..\..\ext-driver;..\..\Cfg\MCAL_Cfg;..\..\APP;..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Driver\CMSIS\Include;..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\inc;..\..\DRIVER\Chip_Driver\APM32E103VE\User_Interface</IncludePath>
+              <IncludePath>..\main;..\applications;..\..\OS\OS_Driver;..\..\OS\OS_Task;..\..\RTE;..\..\TYPES;..\..\RTE;..\..\LIB;..\..\BSW;..\..\Cfg\BSW_Cfg;..\..\MCAL;..\..\ext-driver;..\..\Cfg\MCAL_Cfg;..\..\APP;..\..\DRIVER\Chip_Driver\PY32F030\Library\Driver\CMSIS\Include;..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\inc;..\..\DRIVER\Chip_Driver\PY32F030\User_Interface</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -393,26 +393,6 @@
               <FileType>1</FileType>
               <FilePath>..\OS_TASK.c</FilePath>
             </File>
-            <File>
-              <FileName>APP_Scroll_storage.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\applications\APP_Scroll_storage.c</FilePath>
-            </File>
-            <File>
-              <FileName>APP_test.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\applications\APP_test.c</FilePath>
-            </File>
-            <File>
-              <FileName>APP_KEY_State_Get.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\applications\APP_KEY_State_Get.c</FilePath>
-            </File>
-            <File>
-              <FileName>APP_LED_State.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\applications\APP_LED_State.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -464,129 +444,209 @@
           <GroupName>Standard_Library</GroupName>
           <Files>
             <File>
-              <FileName>apm32e10x_adc.c</FileName>
+              <FileName>py32f0xx_hal_adc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_adc.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_adc.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_bakpr.c</FileName>
+              <FileName>py32f0xx_hal_adc_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_bakpr.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_adc_ex.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_can.c</FileName>
+              <FileName>py32f0xx_hal_comp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_can.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_comp.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_crc.c</FileName>
+              <FileName>py32f0xx_hal_cortex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_crc.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_cortex.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_dac.c</FileName>
+              <FileName>py32f0xx_hal_crc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_dac.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_crc.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_dbgmcu.c</FileName>
+              <FileName>py32f0xx_hal_dma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_dbgmcu.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_dma.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_dma.c</FileName>
+              <FileName>py32f0xx_hal_exti.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_dma.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_exti.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_dmc.c</FileName>
+              <FileName>py32f0xx_hal_flash.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_dmc.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_flash.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_eint.c</FileName>
+              <FileName>py32f0xx_hal_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_eint.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_gpio.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_fmc.c</FileName>
+              <FileName>py32f0xx_hal_i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_fmc.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_i2c.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_gpio.c</FileName>
+              <FileName>py32f0xx_hal_irda.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_gpio.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_irda.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_i2c.c</FileName>
+              <FileName>py32f0xx_hal_iwdg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_i2c.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_iwdg.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_iwdt.c</FileName>
+              <FileName>py32f0xx_hal_led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_iwdt.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_led.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_misc.c</FileName>
+              <FileName>py32f0xx_hal_lptim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_misc.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_lptim.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_pmu.c</FileName>
+              <FileName>py32f0xx_hal_pwr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_pmu.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_pwr.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_rcm.c</FileName>
+              <FileName>py32f0xx_hal_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_rcm.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_rcc.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_rtc.c</FileName>
+              <FileName>py32f0xx_hal_rcc_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_rtc.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_rcc_ex.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_sci2c.c</FileName>
+              <FileName>py32f0xx_hal_rtc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_sci2c.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_rtc.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_sdio.c</FileName>
+              <FileName>py32f0xx_hal_rtc_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_sdio.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_rtc_ex.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_smc.c</FileName>
+              <FileName>py32f0xx_hal_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_smc.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_spi.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_spi.c</FileName>
+              <FileName>py32f0xx_hal_tim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_spi.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_tim.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_tmr.c</FileName>
+              <FileName>py32f0xx_hal_tim_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_tmr.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_tim_ex.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_usart.c</FileName>
+              <FileName>py32f0xx_hal_uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_usart.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_uart.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_usb.c</FileName>
+              <FileName>py32f0xx_hal_usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_usb.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_usart.c</FilePath>
             </File>
             <File>
-              <FileName>apm32e10x_wwdt.c</FileName>
+              <FileName>py32f0xx_hal_wwdg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_wwdt.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_wwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_comp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_comp.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_lptim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_lptim.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>py32f0xx_ll_utils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_utils.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -597,179 +657,49 @@
           <GroupName>Chip_Driver</GroupName>
           <Files>
             <File>
-              <FileName>apm32e10x_int.c</FileName>
+              <FileName>py32f0xx_hal.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\User_Interface\apm32e10x_int.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\User_Interface\py32f0xx_hal.c</FilePath>
             </File>
             <File>
-              <FileName>system_apm32e10x.c</FileName>
+              <FileName>py32f0xx_hal_msp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\User_Interface\system_apm32e10x.c</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\User_Interface\py32f0xx_hal_msp.c</FilePath>
             </File>
             <File>
-              <FileName>startup_apm32e10x_hd.s</FileName>
+              <FileName>py32f0xx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\User_Interface\py32f0xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_py32f0xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\User_Interface\system_py32f0xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_py32f030xx.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Driver\Startup\startup_apm32e10x_hd.s</FilePath>
+              <FilePath>..\..\DRIVER\Chip_Driver\PY32F030\Library\Driver\Startup\startup_py32f030xx.s</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
           <GroupName>MCAL</GroupName>
-          <Files>
-            <File>
-              <FileName>MCAL_GPIO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\MCAL\MCAL_GPIO.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_ADC.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\MCAL\MCAL_ADC.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_DMA.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\MCAL\MCAL_DMA.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_SPI.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\MCAL\MCAL_SPI.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_UART.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\MCAL\MCAL_UART.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_NVIC.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\MCAL\MCAL_NVIC.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_Timer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\MCAL\MCAL_Timer.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>MCAL-Cfg</GroupName>
-          <Files>
-            <File>
-              <FileName>MCAL_Cfg_ADC.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_ADC.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_Cfg_DMA.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_DMA.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_Cfg_SPI.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_SPI.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_Cfg_UART.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_UART.c</FilePath>
-            </File>
-            <File>
-              <FileName>MCAL_Cfg_GPIO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_GPIO.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>BSW</GroupName>
-          <Files>
-            <File>
-              <FileName>BSW_Adcif.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\BSW\BSW_Adcif.c</FilePath>
-            </File>
-            <File>
-              <FileName>BSW_FFT_APP.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\BSW\BSW_FFT_APP.c</FilePath>
-            </File>
-            <File>
-              <FileName>BSW_Dio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\BSW\BSW_Dio.c</FilePath>
-            </File>
-            <File>
-              <FileName>BSW_NvM.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\BSW\BSW_NvM.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>BSW-Cfg</GroupName>
         </Group>
         <Group>
           <GroupName>LIB</GroupName>
-          <Files>
-            <File>
-              <FileName>Lib_Log_Util.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\LIB\Lib_Log_Util.c</FilePath>
-            </File>
-            <File>
-              <FileName>cr4_fft_256_stm32.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\LIB\cr4_fft_256_stm32.s</FilePath>
-            </File>
-            <File>
-              <FileName>cr4_fft_1024_stm32.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\LIB\cr4_fft_1024_stm32.s</FilePath>
-            </File>
-            <File>
-              <FileName>arm_cortexM3l_math.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\LIB\arm_cortexM3l_math.lib</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>ext-driver</GroupName>
-          <Files>
-            <File>
-              <FileName>Ext_LCD_Driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\ext-driver\Ext_LCD_Driver.c</FilePath>
-            </File>
-            <File>
-              <FileName>Lib_LCD_kernel.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\ext-driver\Lib_LCD_kernel.c</FilePath>
-            </File>
-            <File>
-              <FileName>Lib_LCD_menu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\ext-driver\Lib_LCD_menu.c</FilePath>
-            </File>
-            <File>
-              <FileName>Ext_MB85RS64.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\ext-driver\Ext_MB85RS64.c</FilePath>
-            </File>
-            <File>
-              <FileName>Ext_KEY.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\ext-driver\Ext_KEY.c</FilePath>
-            </File>
-            <File>
-              <FileName>Ext_LED.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\ext-driver\Ext_LED.c</FilePath>
-            </File>
-          </Files>
         </Group>
       </Groups>
     </Target>

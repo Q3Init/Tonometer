@@ -119,18 +119,18 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+          <Key>UL2CM3</Key>
+          <Name>UL2CM3(-S0 -C0 -P0 )  -FN1 -FC1000 -FD20000000 -FF0PY32F0xx_64 -FL010000 -FS08000000 -FP0($$Device:PY32F030x8$Flash\PY32F0xx_64.FLM)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
           <Key>ST-LINKIII-KEIL_SWO</Key>
-          <Name>-U2D2B051B7315303030303032 -O206 -SF1800 -C0 -A0 -I0 -HNlocalhost -HP7184 -P1 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO131090 -TC10000000 -TT10000000 -TP21 -TDS8004 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC1000 -FN1 -FF0APM32E10x_512.FLM -FS08000000 -FL080000 -FP0($$Device:APM32E103VE$Flash\APM32E10x_512.FLM)</Name>
+          <Name>-U2D2B051B7315303030303032 -O206 -SF10000 -C0 -A0 -I0 -HNlocalhost -HP7184 -P1 -N00("") -D00(00000000) -L00(0) -TO131090 -TC10000000 -TT10000000 -TP21 -TDS8000 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC1000 -FN1 -FF0PY32F0xx_64.FLM -FS08000000 -FL010000 -FP0($$Device:PY32F030x8$Flash\PY32F0xx_64.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGDARM</Key>
           <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)</Name>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>UL2CM3</Key>
-          <Name>UL2CM3(-S0 -C0 -P0 )  -FN1 -FC1000 -FD20000000 -FF0APM32E10x_512 -FL080000 -FS08000000 -FP0($$Device:APM32E103VE$Flash\APM32E10x_512.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -238,6 +238,13 @@
           <WinId>35904</WinId>
         </Entry>
       </SystemViewers>
+      <DebugDescription>
+        <Enable>1</Enable>
+        <EnableFlashSeq>0</EnableFlashSeq>
+        <EnableLog>0</EnableLog>
+        <Protocol>2</Protocol>
+        <DbgClock>10000000</DbgClock>
+      </DebugDescription>
     </TargetOption>
   </Target>
 
@@ -271,54 +278,6 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>3</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\applications\APP_Scroll_storage.c</PathWithFileName>
-      <FilenameWithoutPath>APP_Scroll_storage.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>4</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\applications\APP_test.c</PathWithFileName>
-      <FilenameWithoutPath>APP_test.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>5</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\applications\APP_KEY_State_Get.c</PathWithFileName>
-      <FilenameWithoutPath>APP_KEY_State_Get.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>6</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\applications\APP_LED_State.c</PathWithFileName>
-      <FilenameWithoutPath>APP_LED_State.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
   </Group>
 
   <Group>
@@ -329,7 +288,7 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>7</FileNumber>
+      <FileNumber>3</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -341,7 +300,7 @@
     </File>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>8</FileNumber>
+      <FileNumber>4</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -353,7 +312,7 @@
     </File>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>9</FileNumber>
+      <FileNumber>5</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -365,7 +324,7 @@
     </File>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>10</FileNumber>
+      <FileNumber>6</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -377,7 +336,7 @@
     </File>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>11</FileNumber>
+      <FileNumber>7</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -389,7 +348,7 @@
     </File>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>12</FileNumber>
+      <FileNumber>8</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -409,7 +368,7 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>13</FileNumber>
+      <FileNumber>9</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -429,13 +388,61 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>4</GroupNumber>
+      <FileNumber>10</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_adc.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_adc.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>11</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_adc_ex.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_adc_ex.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>12</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_comp.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_comp.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>13</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_cortex.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_cortex.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
       <FileNumber>14</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_adc.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_adc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_crc.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_crc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -446,8 +453,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_bakpr.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_bakpr.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_dma.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_dma.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -458,8 +465,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_can.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_can.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_exti.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_exti.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -470,8 +477,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_crc.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_crc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_flash.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_flash.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -482,8 +489,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_dac.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_dac.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_gpio.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_gpio.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -494,8 +501,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_dbgmcu.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_dbgmcu.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_i2c.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_i2c.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -506,8 +513,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_dma.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_dma.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_irda.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_irda.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -518,8 +525,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_dmc.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_dmc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_iwdg.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_iwdg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -530,8 +537,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_eint.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_eint.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_led.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_led.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -542,8 +549,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_fmc.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_fmc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_lptim.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_lptim.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -554,8 +561,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_gpio.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_gpio.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_pwr.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_pwr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -566,8 +573,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_i2c.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_i2c.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_rcc.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_rcc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -578,8 +585,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_iwdt.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_iwdt.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_rcc_ex.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_rcc_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -590,8 +597,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_misc.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_misc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_rtc.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_rtc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -602,8 +609,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_pmu.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_pmu.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_rtc_ex.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_rtc_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -614,8 +621,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_rcm.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_rcm.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_spi.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_spi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -626,8 +633,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_rtc.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_rtc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_tim.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_tim.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -638,8 +645,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_sci2c.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_sci2c.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_tim_ex.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_tim_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -650,8 +657,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_sdio.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_sdio.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_uart.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_uart.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -662,8 +669,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_smc.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_smc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_usart.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_usart.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -674,8 +681,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_spi.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_spi.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_hal_wwdg.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_wwdg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -686,8 +693,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_tmr.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_tmr.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_adc.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_adc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -698,8 +705,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_usart.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_usart.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_comp.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_comp.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -710,8 +717,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_usb.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_usb.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_crc.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_crc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -722,8 +729,152 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Standard_Library\src\apm32e10x_wwdt.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_wwdt.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_dma.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_dma.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>39</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_exti.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_exti.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>40</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_gpio.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_gpio.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>41</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_i2c.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_i2c.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>42</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_led.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_led.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>43</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_lptim.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_lptim.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>44</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_pwr.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_pwr.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>45</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_rcc.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_rcc.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>46</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_rtc.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_rtc.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>47</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_spi.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_spi.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>48</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_tim.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_tim.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>49</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_usart.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_usart.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>50</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\src\py32f0xx_ll_utils.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_ll_utils.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -739,43 +890,67 @@
 
   <Group>
     <GroupName>Chip_Driver</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>39</FileNumber>
+      <FileNumber>51</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\User_Interface\apm32e10x_int.c</PathWithFileName>
-      <FilenameWithoutPath>apm32e10x_int.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\User_Interface\py32f0xx_hal.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>40</FileNumber>
+      <FileNumber>52</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\User_Interface\system_apm32e10x.c</PathWithFileName>
-      <FilenameWithoutPath>system_apm32e10x.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\User_Interface\py32f0xx_hal_msp.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_hal_msp.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>41</FileNumber>
+      <FileNumber>53</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\User_Interface\py32f0xx_it.c</PathWithFileName>
+      <FilenameWithoutPath>py32f0xx_it.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>54</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\User_Interface\system_py32f0xx.c</PathWithFileName>
+      <FilenameWithoutPath>system_py32f0xx.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>55</FileNumber>
       <FileType>2</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\DRIVER\Chip_Driver\APM32E103VE\Library\Driver\Startup\startup_apm32e10x_hd.s</PathWithFileName>
-      <FilenameWithoutPath>startup_apm32e10x_hd.s</FilenameWithoutPath>
+      <PathWithFileName>..\..\DRIVER\Chip_Driver\PY32F030\Library\Driver\Startup\startup_py32f030xx.s</PathWithFileName>
+      <FilenameWithoutPath>startup_py32f030xx.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -787,90 +962,6 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>42</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\MCAL\MCAL_GPIO.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_GPIO.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>43</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\MCAL\MCAL_ADC.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_ADC.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>44</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\MCAL\MCAL_DMA.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_DMA.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>45</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\MCAL\MCAL_SPI.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_SPI.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>46</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\MCAL\MCAL_UART.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_UART.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>47</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\MCAL\MCAL_NVIC.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_NVIC.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>48</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\MCAL\MCAL_Timer.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_Timer.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
   </Group>
 
   <Group>
@@ -879,66 +970,6 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>49</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_ADC.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_Cfg_ADC.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>50</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_DMA.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_Cfg_DMA.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>51</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_SPI.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_Cfg_SPI.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>52</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_UART.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_Cfg_UART.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>53</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Cfg\MCAL_Cfg\MCAL_Cfg_GPIO.c</PathWithFileName>
-      <FilenameWithoutPath>MCAL_Cfg_GPIO.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
   </Group>
 
   <Group>
@@ -947,54 +978,6 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>9</GroupNumber>
-      <FileNumber>54</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\BSW\BSW_Adcif.c</PathWithFileName>
-      <FilenameWithoutPath>BSW_Adcif.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>9</GroupNumber>
-      <FileNumber>55</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\BSW\BSW_FFT_APP.c</PathWithFileName>
-      <FilenameWithoutPath>BSW_FFT_APP.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>9</GroupNumber>
-      <FileNumber>56</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\BSW\BSW_Dio.c</PathWithFileName>
-      <FilenameWithoutPath>BSW_Dio.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>9</GroupNumber>
-      <FileNumber>57</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\BSW\BSW_NvM.c</PathWithFileName>
-      <FilenameWithoutPath>BSW_NvM.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
   </Group>
 
   <Group>
@@ -1011,54 +994,6 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>11</GroupNumber>
-      <FileNumber>58</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\LIB\Lib_Log_Util.c</PathWithFileName>
-      <FilenameWithoutPath>Lib_Log_Util.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>11</GroupNumber>
-      <FileNumber>59</FileNumber>
-      <FileType>2</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\LIB\cr4_fft_256_stm32.s</PathWithFileName>
-      <FilenameWithoutPath>cr4_fft_256_stm32.s</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>11</GroupNumber>
-      <FileNumber>60</FileNumber>
-      <FileType>2</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\LIB\cr4_fft_1024_stm32.s</PathWithFileName>
-      <FilenameWithoutPath>cr4_fft_1024_stm32.s</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>11</GroupNumber>
-      <FileNumber>61</FileNumber>
-      <FileType>4</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\LIB\arm_cortexM3l_math.lib</PathWithFileName>
-      <FilenameWithoutPath>arm_cortexM3l_math.lib</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
   </Group>
 
   <Group>
@@ -1067,78 +1002,6 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>12</GroupNumber>
-      <FileNumber>62</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\ext-driver\Ext_LCD_Driver.c</PathWithFileName>
-      <FilenameWithoutPath>Ext_LCD_Driver.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>12</GroupNumber>
-      <FileNumber>63</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\ext-driver\Lib_LCD_kernel.c</PathWithFileName>
-      <FilenameWithoutPath>Lib_LCD_kernel.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>12</GroupNumber>
-      <FileNumber>64</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\ext-driver\Lib_LCD_menu.c</PathWithFileName>
-      <FilenameWithoutPath>Lib_LCD_menu.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>12</GroupNumber>
-      <FileNumber>65</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\ext-driver\Ext_MB85RS64.c</PathWithFileName>
-      <FilenameWithoutPath>Ext_MB85RS64.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>12</GroupNumber>
-      <FileNumber>66</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\ext-driver\Ext_KEY.c</PathWithFileName>
-      <FilenameWithoutPath>Ext_KEY.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>12</GroupNumber>
-      <FileNumber>67</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\ext-driver\Ext_LED.c</PathWithFileName>
-      <FilenameWithoutPath>Ext_LED.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
   </Group>
 
 </ProjectOpt>
