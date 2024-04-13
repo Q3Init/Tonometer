@@ -32,8 +32,14 @@ void RTE_Init(void)
     /* OS Init */
     OsEvt_Init();
     OsTimer_Init();
-    /* MCAL Init */
-    APP_GpioConfig();
+    /* MCAL Init */    
+	MCAL_RCC_Init();
+	MCAL_NVIC_Init();
+    MCAL_GPIO_Init();      
+	MCAL_DMA_Init();   
+	MCAL_ADC_Init();
+	MCAL_Timer_Init();
+	APP_GpioConfig();
     /* BSW Init */
 
     /* application Init */

@@ -7,10 +7,16 @@
 #include "Os_TaskHdl_Lv0.h"
 #include "Os_TaskHdl_Lv1.h"
 #include "Os_TaskHdl_Lv2.h"
-/* User defined */
-#include "py32f0xx_hal.h"
-/* BSW */
 
+/* User defined */
+#include "MCAL_RCC.h"
+#include "MCAL_GPIO.h"
+#include "MCAL_ADC.h"
+#include "MCAL_DMA.h"
+#include "MCAL_Timer.h"
+#include "MCAL_NVIC.h"
+/* BSW */
+#include "BSW_Adcif.h"
 /* APP */
 
 
