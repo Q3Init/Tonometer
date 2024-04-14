@@ -10,7 +10,7 @@
       <TargetName>APU</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -185,6 +185,7 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
+            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -336,7 +337,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_HAL_DRIVER,PY32F030x8</Define>
+              <Define>USE_HAL_DRIVER,PY32F030x8,ARM_MATH_CM0,__CC_ARM,ARM_MATH_MATRIX_CHECK,ARM_MATH_ROUNDING</Define>
               <Undefine></Undefine>
               <IncludePath>..\main;..\applications;..\..\OS\OS_Driver;..\..\OS\OS_Task;..\..\RTE;..\..\TYPES;..\..\RTE;..\..\LIB;..\..\BSW;..\..\Cfg\BSW_Cfg;..\..\MCAL;..\..\ext-driver;..\..\Cfg\MCAL_Cfg;..\..\APP;..\..\DRIVER\Chip_Driver\PY32F030\Library\Driver\CMSIS\Include;..\..\DRIVER\Chip_Driver\PY32F030\Library\Standard_Library\inc;..\..\DRIVER\Chip_Driver\PY32F030\User_Interface</IncludePath>
             </VariousControls>
@@ -351,7 +352,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
+            <ClangAsOpt>4</ClangAsOpt>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -745,6 +746,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\BSW\BSW_Adcif.c</FilePath>
             </File>
+            <File>
+              <FileName>BSW_FFT_APP.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\BSW\BSW_FFT_APP.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -752,6 +758,18 @@
         </Group>
         <Group>
           <GroupName>LIB</GroupName>
+          <Files>
+            <File>
+              <FileName>arm_cfft_f32.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\LIB\arm_cfft_f32.c</FilePath>
+            </File>
+            <File>
+              <FileName>arm_cortexM0l_math.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\LIB\arm_cortexM0l_math.lib</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>ext-driver</GroupName>
@@ -765,5 +783,14 @@
     <components/>
     <files/>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>TS_Project</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>
